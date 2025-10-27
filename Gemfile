@@ -2,12 +2,12 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2", ">= 7.2.2.2"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 1.4"
+gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -38,6 +38,50 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+end
+
+# JSON serialization
+gem 'active_model_serializers', '~> 0.10.13'
+
+# Reset primary key sequences
+gem 'activerecord-reset-pk-sequence', '~> 0.2.1'
+
+group :development do
+  # File changes monitoring
+  gem 'listen', '~> 3.8'
+  # Speed up development
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.1'
+end
+
+group :development, :test do
+  # Debugging
+  gem 'byebug', '~> 11.1', platform: :mri
+  # Improved error pages
+  gem 'better_errors', '~> 2.10'
+  gem 'binding_of_caller', '~> 1.0'
+  # Testing and code watching
+  gem 'guard', '~> 2.18'
+  gem 'guard-bundler', require: false
+  gem 'guard-rspec', require: false
+  gem 'rspec-rails', '~> 6.1' # Обновлено с 3.5 для Rails 7.2
+  gem 'rails-controller-testing', '~> 1.0'
+  # Code analysis
+  gem 'rubocop', '~> 1.81', require: false
+  gem 'rubocop-rspec', '~> 2.30'
+  gem 'guard-rubocop', '~> 1.5'
+end
+
+group :test do
+  # Test data generation
+  gem 'factory_girl_rails', '~> 4.9' # Можно заменить на 'factory_bot_rails', '~> 6.4'
+  gem 'faker', '~> 3.4'
+  gem 'database_cleaner', '~> 2.0'
+end
+
+group :coverage do
+  # Test coverage
+  gem 'simplecov', '~> 0.22', require: false
 end
 
 
