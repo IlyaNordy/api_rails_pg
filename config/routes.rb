@@ -8,10 +8,10 @@ Rails.application.routes.draw do
 
   scope module: 'api' do
     namespace :v1 do
-      resources :jobs, only: [:index, :show]
+      resources :jobs, only: [:index, :show, :create, :update, :destroy]
 
-      resources :companies, only: [:index, :show] do
-        resources :jobs, only: [:index, :show], module: :companies
+      resources :companies, only: [:index, :show, :create, :destroy] do
+        resources :jobs, only: [:index, :show, :create, :update, :destroy], module: :companies
       end
 
       resources :geeks, only: [:index, :show]

@@ -1,3 +1,3 @@
 class CompanySerializer < ActiveModel::Serializer
-  attributes :name, :location
+  attributes :id, :name, :location
 end
