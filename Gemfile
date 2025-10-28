@@ -83,5 +83,3 @@ group :coverage do
   # Test coverage
   gem 'simplecov', '~> 0.22', require: false
 end
-
-

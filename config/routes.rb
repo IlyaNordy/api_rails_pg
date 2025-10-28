@@ -6,6 +6,22 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   get '/favicon.ico', to: redirect('/favicon.ico')
 
+  scope module: 'api' do
+    namespace :v1 do
+      resources :jobs, only: [:index, :show]
+
+      resources :companies, only: [:index, :show] do
+        resources :jobs, only: [:index, :show], module: :companies
+      end
+
+      resources :geeks, only: [:index, :show]
+
+      resources :applies, only: [:index, :create]
+    end
+  end
+
+  match "*path", to: "application#catch_404", via: :all
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
