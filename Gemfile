@@ -68,7 +68,7 @@ group :development, :test do
   gem 'rails-controller-testing', '~> 1.0'
   # Code analysis
   gem 'rubocop', '~> 1.81', require: false
-  gem 'rubocop-rspec', '~> 2.30'
+  gem 'rubocop-rspec', '~> 3.7'
   gem 'guard-rubocop', '~> 1.5'
 end
 
