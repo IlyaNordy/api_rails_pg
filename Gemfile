@@ -64,7 +64,7 @@ group :development, :test do
   gem 'guard', '~> 2.18'
   gem 'guard-bundler', require: false
   gem 'guard-rspec', require: false
-  gem 'rspec-rails', '~> 6.1' # Обновлено с 3.5 для Rails 7.2
+  gem 'rspec-rails', '~> 8.0' # Обновлено с 3.5 для Rails 7.2
   gem 'rails-controller-testing', '~> 1.0'
   # Code analysis
   gem 'rubocop', '~> 1.81', require: false
