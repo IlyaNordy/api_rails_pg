@@ -75,7 +75,7 @@ end
 group :test do
   # Test data generation
   gem 'factory_girl_rails', '~> 4.9' # Можно заменить на 'factory_bot_rails', '~> 6.4'
-  gem 'faker', '~> 3.4'
+  gem 'faker', '~> 3.5'
   gem 'database_cleaner', '~> 2.0'
 end
 
