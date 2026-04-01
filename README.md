@@ -1,24 +1,33 @@
-# README
+# api_rails_pg
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Учебный проект на Ruby on Rails с использованием PostgreSQL.
 
-Things you may want to cover:
+## О проекте
+Проект представляет собой backend-приложение, разработанное в рамках учебной практики. Основной фокус — работа с Rails, подключение базы данных PostgreSQL, построение структуры приложения и подготовка API-ориентированного сервиса.
 
-* Ruby version
+## Стек
+- Ruby
+- Ruby on Rails 7
+- PostgreSQL
+- Puma
+- Active Model Serializers
+- RSpec
+- RuboCop
+- Docker
 
-* System dependencies
+## Что реализовано
+- базовая структура Rails-приложения
+- подключение PostgreSQL
+- настройка маршрутов и конфигурации приложения
+- сериализация данных в JSON
+- тестовая инфраструктура для дальнейшего покрытия функциональности
 
-* Configuration
+## Цель проекта
+Практика разработки backend-приложения на Rails, работа с БД, API-логикой и структурой современного Ruby-проекта.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Запуск проекта
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails s
