@@ -56,7 +56,7 @@ end
 
 group :development, :test do
   # Debugging
-  gem 'byebug', '~> 11.1', platform: :mri
+  gem 'byebug', '~> 12.0', platform: :mri
   # Improved error pages
   gem 'better_errors', '~> 2.10'
   gem 'binding_of_caller', '~> 1.0'
