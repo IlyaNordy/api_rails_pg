@@ -121,7 +121,7 @@ GEM
     factory_girl_rails (4.9.0)
       factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
-    faker (3.5.2)
+    faker (3.5.3)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
@@ -410,7 +410,7 @@ DEPENDENCIES
   database_cleaner (~> 2.0)
   debug
   factory_girl_rails (~> 4.9)
-  faker (~> 3.4)
+  faker (~> 3.5)
   guard (~> 2.18)
   guard-bundler
   guard-rspec
