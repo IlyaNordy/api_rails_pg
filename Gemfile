@@ -41,7 +41,7 @@ group :development, :test do
 end
 
 # JSON serialization
-gem 'active_model_serializers', '~> 0.10.13'
+gem 'active_model_serializers', '~> 0.10.16'
 
 # Reset primary key sequences
 gem 'activerecord-reset-pk-sequence', '~> 0.2.1'
