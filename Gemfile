@@ -67,7 +67,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.1' # Обновлено с 3.5 для Rails 7.2
   gem 'rails-controller-testing', '~> 1.0'
   # Code analysis
-  gem 'rubocop', '~> 1.81', require: false
+  gem 'rubocop', '~> 1.82', require: false
   gem 'rubocop-rspec', '~> 2.30'
   gem 'guard-rubocop', '~> 1.5'
 end
